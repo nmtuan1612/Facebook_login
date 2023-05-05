@@ -4,6 +4,8 @@ import Script from "next/script";
 import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
+  console.log("clgt");
+  console.log("id :", process.env.APP_ID);
   useEffect(() => {
     window.fbAsyncInit = function () {
       window.FB.init({
