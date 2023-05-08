@@ -6,8 +6,8 @@ type Data = {
   name: string;
 };
 const FACEBOOK_GRAPH_URL = "https://graph.facebook.com/v16.0";
-export const APP_ID = "1035029924144825";
-const APP_SECRET = "83e3133924868a7e55bf32534693fad8";
+export const APP_ID = "606911818050889";
+const APP_SECRET = "7fb5f5685d1f34a52941e4c8e5d7d151";
 export default async function handler(req: any, res: any) {
   const appAccessToken = await getAppAccessToken();
   const scopes = await debugToken(appAccessToken, req.query.token);
@@ -17,7 +17,7 @@ export default async function handler(req: any, res: any) {
 
 const getAppAccessToken = async () => {
   const response = await fetch(
-    `https://graph.facebook.com/oauth/access_token?client_id=${APP_ID}&client_secret=${APP_SECRET}&grant_type=client_credentials`
+    `https://graph.facebook.com/oauth/access_token?client_id=${APP_ID}&client_secret=${APP_SECRET}`
   );
 
   const data: { access_token: string } = await response.json();

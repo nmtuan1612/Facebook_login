@@ -12,7 +12,7 @@ export default function Home() {
         if (response.status === "connected") {
           console.log("response: ", response);
           fetch(
-            `https://fb-login-smoky.vercel.app/api/hello?token=${response.authResponse.accessToken}`
+            `https://facebook-login-nmt.netlify.app/api/hello?token=${response.authResponse.accessToken}`
           )
             .then((response) => response.json())
             .then((data) => console.log("data: ", data));
