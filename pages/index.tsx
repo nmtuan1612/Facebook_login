@@ -10,7 +10,7 @@ export default function Home() {
     window.FB.login(
       (response) => {
         if (response.status === "connected") {
-          console.log(response.authResponse.accessToken);
+          console.log("response: ", response);
           fetch(
             `https://fb-login-smoky.vercel.app/api/hello?token=${response.authResponse.accessToken}`
           )
