@@ -17,7 +17,7 @@ export default async function handler(req: any, res: any) {
 
 const getAppAccessToken = async () => {
   const response = await fetch(
-    `https://graph.facebook.com/oauth/access_token?client_id=${APP_ID}&client_secret=${APP_SECRET}`
+    `https://graph.facebook.com/oauth/access_token?client_id=${APP_ID}&client_secret=${APP_SECRET}&grant_type=client_credentials`
   );
 
   const data: { access_token: string } = await response.json();
