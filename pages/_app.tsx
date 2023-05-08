@@ -9,8 +9,8 @@ export default function App({ Component, pageProps }: AppProps) {
     window.fbAsyncInit = function () {
       window.FB.init({
         appId: APP_ID,
-        // autoLogAppEvents: true,
-        cookie: true,
+        autoLogAppEvents: true,
+        // cookie: true,
         xfbml: true,
         version: "v16.0",
       });
