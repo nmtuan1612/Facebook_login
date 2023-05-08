@@ -6,8 +6,8 @@ type Data = {
   name: string;
 };
 const FACEBOOK_GRAPH_URL = "https://graph.facebook.com/v16.0";
-export const APP_ID = "606911818050889";
-const APP_SECRET = "7fb5f5685d1f34a52941e4c8e5d7d151";
+export const APP_ID = "164147563069632";
+const APP_SECRET = "cbc131a5c4599bea93985a8bed5b852b";
 export default async function handler(req: any, res: any) {
   const appAccessToken = await getAppAccessToken();
   const scopes = await debugToken(appAccessToken, req.query.token);
