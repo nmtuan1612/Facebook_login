@@ -19,7 +19,7 @@ export default function Home() {
         }
       },
       //  { config_id: "607810021378747", response_type: "code" }
-      { scope: "public_profile,pages_read_engagement" }
+      { scope: "public_profile" }
     );
   };
   return (
