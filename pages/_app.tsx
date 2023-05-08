@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     window.fbAsyncInit = function () {
       window.FB.init({
-        appId: APP_ID,
+        appId: "753441359793973",
         autoLogAppEvents: true,
         // cookie: true,
         xfbml: true,

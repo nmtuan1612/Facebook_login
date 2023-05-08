@@ -17,9 +17,9 @@ export default function Home() {
             .then((response) => response.json())
             .then((data) => console.log("data: ", data));
         }
-      },
+      }
       //  { config_id: "607810021378747", response_type: "code" }
-      { scope: "public_profile" }
+      // { scope: "public_profile" }
     );
   };
   return (
