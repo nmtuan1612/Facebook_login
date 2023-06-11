@@ -9,6 +9,7 @@ export default function Home() {
   const login = () => {
     window.FB.login(
       (response) => {
+        console.log(response);
         if (response.status === "connected") {
           console.log("response: ", response);
           fetch(
