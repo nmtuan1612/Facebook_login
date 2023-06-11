@@ -20,7 +20,7 @@ export default function Home() {
         }
       },
       //  { config_id: "607810021378747", response_type: "code" }
-      { scope: "public_profile" }
+      { scope: "pages_messaging" }
     );
   };
   return (
